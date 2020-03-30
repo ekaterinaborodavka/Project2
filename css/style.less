@@ -1,0 +1,202 @@
+//compress:true;
+@import "vars";
+@import "mixins";
+
+@font-face{
+    font-family: 'Noto Sans';
+    src: url(../fonts/noto_sans/NotoSansJP-Regular.ttf);
+    src: url(../fonts/noto_sans/NotoSansJP-Regular.woff);
+    src: url(../fonts/noto_sans/NotoSansJP-Regular.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'Bellota Text';
+    src: url(../fonts/bellota_text/BellotaText-Regular.ttf);
+    src: url(../fonts/bellota_text/BellotaText-Regular.woff);
+    src: url(../fonts/bellota_text/BellotaText-Regular.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+    color: black;
+}
+body{
+    .bg(@body_color);
+    .text_center;
+    font-family: 'Bellota Text', sans-serif;
+    .size(22px);
+}
+.paging_item a, .paging_item, .select, .message, .nav_list_item a, .title, textarea, input, button{
+    .color(@message_color);
+}
+.header, .footer{
+    .bg(@headerfooter_color);
+}
+.title{
+    .padding;
+}
+h1{
+    font-family: 'Noto Sans', serif;
+    .size(2.1em);
+    padding:2%;
+    .border_bottom;
+}
+.lapa{
+    padding: 0 2%;
+}
+.nav_list{
+    .flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.nav_list li{
+    width: 15%;
+    .padding;
+    .bold;
+    .border;
+    border-radius: 10%;
+    .bg(@nav_color);
+}
+.nav_list li:hover{
+    cursor: pointer;
+    .bg(@navhov_color);
+    .size(1.1em);
+}
+.main, .footer{
+    .padding;
+    margin:2% 0;
+}
+.footer{
+    margin:2% 0 0 0;
+}
+.main_img{
+    display: block;
+    margin:auto;
+    .border;
+    border-radius: 2%;
+    max-width: 100%;
+}
+.main_item{
+    position: relative;
+    .padding;
+}
+.message{
+    position:absolute;
+    top: 55%;
+    right: 10%;
+    background-color: rgba(0,0,0,0.5);
+    .border;
+    border-radius: 5%;
+    .padding;
+}
+.messsage_cont{
+    text-align: left;
+    .height_indent;
+    .size(0.7em);
+}
+.webcontacts_list{
+    .padding;
+}
+.item{
+    max-width: 60%;
+    .border;
+    margin: auto;
+}
+.pet{
+    .padding;
+    .flex;
+    justify-content: center;
+}
+.about_pet{
+    width: 90%;
+    .padding;
+    .size(0.9em);
+}
+.name_pet{
+    padding:2%;
+    .bold;
+    width: 100%;
+}
+.select{
+    width: 50%;
+    .border;
+    border-radius:30%;
+    .size(0.9em);
+    .bold;
+    .bg(@nav_color);
+}
+.select:hover, .paging_item:hover{
+    .bg(@navhov_color);
+}
+.paging_list{
+    .flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 0 auto;
+    .padding;
+}
+.paging_item{
+    .border;
+    border-radius:30%;
+    width: 10%;
+    .padding;
+    .bg(@nav_color);
+}
+.letter{
+    .flex;
+    justify-content: center;
+}
+legend{
+    .bold;
+    .padding;
+}
+input, textarea{
+    .bg(@headerfooter_color);
+    .border;
+    width: 100%;
+    border-radius:10%;
+    .height_indent;
+    .padding;
+    .size(0.8em);
+}
+textarea{
+    text-align: justify;
+    padding:3%;
+}
+label{
+    width: 100%;
+    .bold;
+    .padding;
+    .margin;
+}
+button{
+    .bg(@headerfooter_color);
+    .border;
+    border-radius:30%;
+    padding: 2%;
+    .margin;
+}
+.contact, .address, .info{
+    .padding;
+    line-height: 1.5em;
+}
+.address{
+    .border_left_reght;
+}
+.address_title, .cont_name, .title_shedule{
+    .bold;
+    .padding;
+    .margin;
+    .size(1.1em);
+}
+.cont_link, .address_item, .shedule_item{
+    .padding;
+    text-align: left;
+    text-indent: 1.5em;
+    .size(0.8em);
+}
